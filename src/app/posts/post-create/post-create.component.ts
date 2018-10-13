@@ -11,5 +11,10 @@ import { Component } from '@angular/core';
 
 //1. creating component by making a class
 export class PostCreateComponent {
+    enteredValue = '';
+    newPost = '';
 
+    onAddPost(){
+        this.newPost = this.enteredValue;
+    }
 }
