@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 @Component({
     //name starts with app- so no confusion with html
     selector: 'app-post-create',
-    templateUrl: './post-create.component.html'
+    templateUrl: './post-create.component.html',
+    styleUrls: ['./post-create.component.css']
 })
 
 //1. creating component by making a class

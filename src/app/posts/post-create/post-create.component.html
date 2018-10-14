@@ -1,5 +1,15 @@
 <h2>Post Create Component.html</h2>
-<textarea row="6" [(ngModel)]="enteredValue"></textarea>
+
+<mat-card>
+    <mat-form-field>
+        <textarea matInput row="6" [(ngModel)]="enteredValue"></textarea>
+    </mat-form-field>
+    <button 
+        mat-raised-button 
+        color="primary"
+        (click)="onAddPost()">post btn</button>
+</mat-card>
+
 <hr>
-<button (click)="onAddPost()">post btn</button>
+
 <p>{{ newPost }}</p>
