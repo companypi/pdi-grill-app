@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule, 
         MatCardModule, 
         MatButtonModule,
-        MatToolbarModule } from '@angular/material'
+        MatToolbarModule,
+        MatExpansionModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
-import { HeaderComponent } from './header/header.component'
+import { postListComponent } from './posts/post-list/post-list.component';
 import { enableProdMode } from '@angular/core';
-;
+
 
 enableProdMode();
 
@@ -19,8 +21,9 @@ enableProdMode();
   //now angular know AppComponents
   declarations: [
     AppComponent,
+    HeaderComponent,
     PostCreateComponent,
-    HeaderComponent
+    postListComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ enableProdMode();
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
